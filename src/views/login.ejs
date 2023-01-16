@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('./partials/head.ejs') %>
+    <title>Iniciar sesión</title>
+  </head>
+
+<%-include('./partials/header.ejs') %>
+<body>
+    <main>
+      <form action="/" method="GET" class="formBody">
+        <div class="TopContainer">
+          <h3>¡Bienvenido!</h3>
+        </div>
+        <div class="FormItem">
+          <label for="nombre-usuario">Usuario / E-mail:</label>
+          <input type="text" name="nombre-usuario" placeholder="Nombre de usuario" class="InputControl" />
+        </div>
+        <div class="FormItem">
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" placeholder="Contraseña" class="InputControl" />
+        </div>
+        <div>
+          <button type="submit" class="SubmitBotton">Login</button>
+        </div>
+        <div class="FormItemLink">
+          <a href="/recovery">¿Olvidaste tu contraseña?</a>
+          <a href="/register">Creá tu cuenta</a>
+        </div>
+      </form>
+    </main>
+    <%-include('./partials/footer.ejs') %>
+</body>
+</html>
